@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>pokeball.ico">
+    <title>Pokemon</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <style>
+
+
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 0px 694px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 0px 694px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 0px 694px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 0px 694px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 0px 694px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 0px 694px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 0px 694px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 0px 694px;
+  }
+}
+/* Main styles */
+body {
+  background: url("<%= BASE_URL %>bgimagebig.png") repeat 0 0 ;
+  -webkit-animation: bg-scrolling-reverse 7s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 7s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 7s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 7s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+  </style>
+</html>
